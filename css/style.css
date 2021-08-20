@@ -30,10 +30,15 @@ h4 {
   font-weight: 400;
 }
 
-#myproject {background-color:#4D5E68;
+.myproject {background-color:#4D5E68;
 color:#ffffff;
 padding: 10px;
 text-align:left; }
+
+
+
+
+
 
 .button.contact {
   background-color: transparent;
@@ -54,16 +59,15 @@ text-align:left; }
   font-weight: 300;
   padding: 10px;
   border-radius: 4px;
-  border-bottom: 2px solid #transparent; /* width of the border, type, color */
+  border-bottom: 2px; /* width of the border, type, color */
   transition: 0.2s opacity;
-.button:hover {background-color: #B19F8B;
 color: #ffffff;
 }
 
-.category { background-color: #B19F8B;
+.category { background-color:transparent ;
 color: #4D5E68; /* needed to override the default link color */
 font-weight: 300;
 padding: 10px;
 border-radius: 4px;
-border-bottom: 2px solid #transparent; /* width of the border, type, color */
+
 transition: 0.2s opacity;}
