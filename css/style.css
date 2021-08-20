@@ -61,7 +61,7 @@ text-align:left; }
   border-radius: 4px;
   border-bottom: 2px; /* width of the border, type, color */
   transition: 0.2s opacity;
-color: #ffffff;
+color: #4D5E68;
 }
 
 .category { background-color:transparent ;
