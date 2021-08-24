@@ -40,21 +40,17 @@ margin: 0 auto;
 
 header {
   background-color: #ff44c4;
-  padding: 10px;
+  text-align: center;
+  padding: 10px 0px
   margin: 10px;
   border-bottom: 3px solid #4a4a4a;
 }
 
+
+
 selector {
 margin: 0 auto;
 }
-
-.container{
-
-}
-
-
-
 
 .button.contact {
   background-color: transparent;
@@ -87,3 +83,67 @@ padding: 10px;
 border-radius: 4px;
 
 transition: 0.2s opacity;}
+
+/*Layout styling*/
+
+.container{
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+
+
+/* method # 2 if you want to center everything :)
+.center {
+  text-align: center;
+} */
+.logo {
+  max-width: 250px;
+  text-align: center;
+}
+
+/* Getting rid of bullet points FINALLY */
+
+nav > ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+
+
+/* Hero Section */
+#hero h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* main */
+main {
+padding-top: 133px;
+}
