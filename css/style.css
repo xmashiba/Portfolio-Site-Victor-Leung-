@@ -97,8 +97,8 @@ transition: 0.2s opacity;}
   padding: 0 15px;
   border-bottom: 2px;
   max-width: 1200px;
-  margin:auto;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
@@ -148,7 +148,7 @@ nav > ul > li > a {
 a{
 color: #4D5E68;
 text-decoration: none;
-transistion: .2s;
+transition: .2s;
 font-size: 28px;
 }
 
@@ -167,19 +167,18 @@ color: #e9e9e9;
 
 
 /* Hero Section */
-#hero h1 {
+#hero h1 span {
   text-align: center;
   margin: 0;
   padding: 0.67em 0;
   border-bottom: 2px;
 }
 
-#hero span{
-
+#hero span {
   text-align: center;
   background-color: #ffe4c4;
   padding: 20px 0;
-  display: inline-block;
+  display: block;
   width: 100%;
   border-bottom: 2px;
 }
@@ -189,61 +188,43 @@ main {
 padding-top: 99px;
 }
 
-* {box-sizing: border-box;
+* { box-sizing: border-box;
 }
 
+/* Advanced CSS */
+header {
+  text-align: unset;
+}
 
-/* Advance CSS 1.8 */
+/* Medium devices (640px and larger)*/
 
-@media only screen and (min-width:640px)
-{
-  header { text-algin:unset;
-  padding: 20px 0 13px;
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-  .col-md-6 {
-    width: 50%;
-  }
-    }
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
   }
 
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 }
 
-@media only screen and (min-width: 1024px){
-.container {
-  padding: 0 100px;
+#about-page h3 {
+  margin-top: 0;
 }
+/* Columns */
 
-{class*="col-lg"} {
-  float: left;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.col-lg-6 {
+.col-md-6 {
   width: 50%;
 }
 
-.col-lg-4 {
-  width: 67%;
-}
-.col-lg-2 {
-  width:33%;
-}
 
-}
 
-@media only screen and (min-width: 1440px) {
 
-}
 
-@media only screen and (min-width: 1920px) {
-
-}
-
-[class*="col-"]{
+[class*="col-"] {
   float: left;
 }
 
