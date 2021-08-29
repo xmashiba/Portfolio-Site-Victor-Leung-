@@ -71,16 +71,21 @@ header {
   background-color: #B19F8B;
   color: #ffffff;
 }
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: transparent;
   color: #4D5E68; /* needed to override the default link color */
   font-weight: 300;
+  text-decoration: none;
   padding: 10px;
   border-radius: 4px;
   border-bottom: 2px; /* width of the border, type, color */
   transition: 0.2s opacity;
-color: #4D5E68;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
 
 .category { background-color:transparent ;
@@ -232,4 +237,49 @@ header {
   content: "";
   clear: both;
   display: table;
+}
+
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from { transform: translate (0,50px);}
+  to { transform: translate (200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
