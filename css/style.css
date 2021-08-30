@@ -15,20 +15,24 @@ h1 {
   font-size: 2.75em;
   font-weight: 700;
   color: #4D5E68;
+  padding: 10px;
 }
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  padding: 10px;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 400;
+  padding: 10px;
 }
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+  padding: 10px;
 }
 
 .myproject {background-color:#4D5E68;
@@ -58,6 +62,11 @@ header {
 
 }
 
+p {
+  padding: 10px;
+  margin: 10px;
+
+}
 
 .button.contact {
   background-color: transparent;
@@ -76,11 +85,11 @@ header {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: transparent;
   color: #4D5E68; /* needed to override the default link color */
-  font-weight: 300;
+  font-weight: 200;
   text-decoration: none;
   padding: 10px;
   border-radius: 4px;
-  border-bottom: 2px; /* width of the border, type, color */
+  border-bottom: 1px; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -120,10 +129,20 @@ transition: 0.2s opacity;}
 .center {
   text-align: center;
 } */
-.logo {
-  max-width: 250px;
-  text-align: center;
+
+#logo {
+  width: 80%;
+  height: auto;
+
+
 }
+
+#top-nav {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-content: end;
+}
+
 
 /* Getting rid of bullet points FINALLY */
 
@@ -214,18 +233,62 @@ header {
     float: right;
     margin-top: 4px;
   }
+
+.col-md-6 {
+  width: 50%;
+  padding: 10px;
+  }
 }
+
+/* large devices (1024px or larger)*/
+
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+    .col-lg-7{
+      width: 60%;
+    }
+
+    .col-lg-5{
+      width: 40%;
+    }
+}
+
+a {
+  padding: 10px;
+  margin: 10px;
+}
+
+#headshot {
+  border-radius: 50%;
+  max-width: 100%;
+  margin: 20px;
+  display:block;
+
+}
+
+/* Add align=”left” to the image.
+Add align=”right” to the image.
+Add style=”float:left” to the image.
+Add style=”float:right” to the image. */
+
 
 #about-page h3 {
   margin-top: 0;
 }
 /* Columns */
 
-.col-md-6 {
-  width: 50%;
+.justify {
+  display:flex;
+  width:80%;
+  margin: 0 auto;
+  justify-content:space-between;
+  list-style-type: none;
+  padding: 0px;
 }
-
-
 
 
 
@@ -281,5 +344,5 @@ header {
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 30s cloud-move-reverse infinite alternate linear;
 }
