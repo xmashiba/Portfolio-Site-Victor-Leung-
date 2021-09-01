@@ -41,6 +41,7 @@ padding: 10px;
 border-bottom: 2px;
 text-align:left;
 margin: 0 auto;
+border-radius: 4px;
  }
 
 .myproject_title {
@@ -50,15 +51,17 @@ margin: 0 auto;
   border-bottom: 2px;
   text-align:center;
   margin: 10px;
+  border-radius: 4px;
 }
 
 header {
   background-color: #C1B891;
   text-align: center;
-  padding: 10px 0px;
-  margin: 10px;
-  border-bottom: 1px solid #3d3d3d;
-  box-shadow: 0 4px 20px;
+  max-width: 100%;
+  max-height: 25%;
+  margin: 10px; flex;
+  border-bottom: 2px solid #3d3d3d;
+  box-shadow: 0 4px 10px;
 
 }
 
@@ -87,7 +90,8 @@ p {
   color: #4D5E68; /* needed to override the default link color */
   font-weight: 200;
   text-decoration: none;
-  padding: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   border-radius: 4px;
   border-bottom: 1px; /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -107,7 +111,7 @@ transition: 0.2s opacity;}
 
 /*Layout styling*/
 
-.container{
+.container {
   padding: 0 15px;
   border-bottom: 2px;
   max-width: 1200px;
@@ -123,6 +127,11 @@ transition: 0.2s opacity;}
   border-bottom: 2px solid #4a4a4a;
 }
 
+.logo-container {
+  padding-left: 40px;
+  vertical-align: bottom;
+}
+
 
 
 /* method # 2 if you want to center everything :)
@@ -131,11 +140,12 @@ transition: 0.2s opacity;}
 } */
 
 #logo {
-  width: 80%;
-  height: auto;
-
+  padding: 100px
+  border: 10px;
 
 }
+
+
 
 #top-nav {
   display: grid;
@@ -164,6 +174,16 @@ nav > ul > li > a {
 
 
 
+.justify {
+  display:flex;
+  width:80%;
+  margin: 0 auto;
+  justify-content:space-between;
+  list-style-type: none;
+  padding: 0px;
+}
+
+
 
 
 
@@ -173,7 +193,7 @@ a{
 color: #4D5E68;
 text-decoration: none;
 transition: .2s;
-font-size: 28px;
+font-size: 18px;
 }
 
 ul:hover a {
@@ -207,6 +227,7 @@ color: #e9e9e9;
   border-bottom: 2px;
 }
 
+
 /* main */
 main {
 padding-top: 99px;
@@ -225,7 +246,7 @@ header {
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 20px;
   }
 
   nav {
@@ -281,14 +302,7 @@ Add style=”float:right” to the image. */
 }
 /* Columns */
 
-.justify {
-  display:flex;
-  width:80%;
-  margin: 0 auto;
-  justify-content:space-between;
-  list-style-type: none;
-  padding: 0px;
-}
+
 
 
 
