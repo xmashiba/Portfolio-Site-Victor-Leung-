@@ -176,6 +176,9 @@ nav > ul > li > a {
   display: inline-block;
 }
 
+.roundedcorners {
+  border-radius: 4px;
+}
 
 #imgcontrol {
   width: 50%;
@@ -230,10 +233,6 @@ padding-top: 99px;
 * { box-sizing: border-box;
 }
 
-
-.roundedcorners {
-  border-radius: 40px;
-}
 /* Medium devices (640px and larger)*/
 
 @media only screen and (min-width: 640px) {
