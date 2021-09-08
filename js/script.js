@@ -7,5 +7,13 @@
    <script>
 console.log ("Hi! Welcome to Victor's Portfolio Site");
    </script>
+
+/* math */
+
+var size = 100;
+var maxSize = (size *4) + 15;
+var minSize = (size /3) - 15 + (size *2);
+
+
   </body>
  </html>
