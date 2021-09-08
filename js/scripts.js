@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
  <html>
   <body>
 
@@ -18,7 +18,7 @@ var minSize = (size /3) - 15 + (size *2);
 
 <button onclick='javascript:alert' ("Victor's Page!")>
 Victor's page
-</button> 
+</button>
 
 
 
