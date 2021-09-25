@@ -297,9 +297,7 @@ padding-top: 99px;
     border-radius: 50%;
     max-width: 50%;
   }
-.text-align: center;
-
-.navtoggle li .icon {
+.text-align: center;.navtoggle li.icon {
   position: absolute;
   right: 24px;
   top: 36px;
@@ -402,7 +400,7 @@ Add style=”float:right” to the image. */
 }
 
 @keyframes cloud-move {
-  from { transform: translate (0,50px);}
+  from { transform: translate (0px,50px);}
   to { transform: translate (200px,50px);}
 }
 
