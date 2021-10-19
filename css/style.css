@@ -297,7 +297,8 @@ padding-top: 99px;
     border-radius: 50%;
     max-width: 50%;
   }
-.text-align: center;.navtoggle li.icon {
+.text-align::after
+.navtoggle li.icon {
   position: absolute;
   right: 24px;
   top: 36px;
@@ -380,13 +381,6 @@ Add style=”float:right” to the image. */
   display: table;
 }
 
-
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -399,10 +393,6 @@ Add style=”float:right” to the image. */
   animation: 4s color-change infinite alternate linear;
 }
 
-@keyframes cloud-move {
-  from { transform: translate (0px,50px);}
-  to { transform: translate (200px,50px);}
-}
 
 .cloud-front {
   animation-duration: 30s;
