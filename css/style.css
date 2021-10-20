@@ -1,5 +1,5 @@
 body {
-  background-color: #b1bec4;
+  background-color: #CCD5D9;
   font-family: 'Oswald', sans-serif;
   font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
@@ -353,7 +353,6 @@ a {
 #headshot {
   border-radius: 50%;
   max-width: 100%;
-
 }
 
 /* Add align=”left” to the image.
